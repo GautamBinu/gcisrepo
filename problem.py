@@ -1,23 +1,30 @@
-def oddoreven(n):
+#checks whether if a number is even or odd and prints a statment
+def oddoreven(num):
     ''' prints statements if its odd or even depending on if it gives a reminder on dividing with 2'''
-    if n % 2 == 0:
+    if num % 2 == 0:
         print("Even number")
     else:
-        print("Odd number")
+        print("not even number")
+
+#prints the square of a number
+def square(num):
+    ''' prints statements with square'''
+    print("the square of your number is ", num * num)
+
+#prints the cube of a number
+def cube(num):
+    ''' prints statements with cube'''
+    print("the cube of your number is ", num * num * num)
 
 
-def squareandcube(n):
-    ''' prints statements with both square and cube'''
-    print("the square of your number is ", n * n)
-    print("the cube of your number is ", n * n * n)
 
-
-# starting point/function of the program
+# starting point/function of the program takes input from user
 def main():
     ''' takes input of integer from user and then calls both of the other functions'''
     x = int(input("enter a number: "))
     oddoreven(x)
-    squareandcube(x)
+    square(x)
+    cube(x)
 
 
 main()  # calling of the function
